@@ -1,6 +1,6 @@
 # Flycheck flash mode line
 
-Flash mode line when flycheck detects erros !!
+Flash mode line when flycheck detects errors !!
 
 ## How It Works
 
