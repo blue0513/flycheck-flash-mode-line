@@ -4,6 +4,8 @@ Flash mode line when flycheck detects erros !!
 
 ## How It Works
 
+When flycheck detects errors, mode line will flash instantly.
+
 ![gif](./images/flash.gif)
 
 ## Usage
