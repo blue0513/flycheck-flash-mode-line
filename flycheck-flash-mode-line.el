@@ -55,8 +55,9 @@
 
 ;;;###autoload
 (define-minor-mode flycheck-flash-mode-line
-  "Minor mode for flycheck-flash-mode-line"
+  "Global minor mode for flycheck-flash-mode-line"
   :init-value nil
+  :global t
   :lighter " ffml"
   (if flycheck-flash-mode-line
       (add-hook 'flycheck-status-changed-functions #'ffm-flash-mode-line)
