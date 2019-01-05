@@ -38,7 +38,7 @@
   :type 'string
   :group 'flycheck-flash-mode-line)
 
-(defun ffm-flash-mode-line (status)
+(defun ffml-flash-mode-line (status)
   "Read STATUS and flash mode line."
   (when (eq status 'finished)
     (if (flycheck-has-current-errors-p 'error)
@@ -60,8 +60,8 @@
   :global t
   :lighter " ffml"
   (if flycheck-flash-mode-line
-      (add-hook 'flycheck-status-changed-functions #'ffm-flash-mode-line)
-    (remove-hook 'flycheck-status-changed-functions #'ffm-flash-mode-line)))
+      (add-hook 'flycheck-status-changed-functions #'ffml-flash-mode-line)
+    (remove-hook 'flycheck-status-changed-functions #'ffml-flash-mode-line)))
 
 (provide 'flycheck-flash-mode-line)
 
